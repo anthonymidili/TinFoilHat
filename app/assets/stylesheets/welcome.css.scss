@@ -1,3 +1,17 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.badge {
+  border: 1px solid black;
+  margin-bottom: 8px;
+  .remove_padding {
+    padding: 0;
+  }
+  .pad_right {
+    padding-right: 1em;
+  }
+  img {
+    max-height: 120px;
+  }
+}
+
+.no_bullets {
+  list-style-type: none;
+}
