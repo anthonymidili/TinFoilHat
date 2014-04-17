@@ -13,7 +13,14 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
-    <%= yield %>
+    <div id="wrap">
+      <%= render 'layouts/header' %>
+
+      <div id="main">
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= render 'layouts/footer' %>
   </body>
 </html>
