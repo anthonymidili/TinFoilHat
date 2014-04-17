@@ -16,6 +16,8 @@ gem 'rails_12factor'
 gem 'better_errors'
 gem 'binding_of_caller'
 
+gem 'haml'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
