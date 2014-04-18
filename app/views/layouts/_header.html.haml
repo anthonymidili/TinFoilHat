@@ -1,0 +1,26 @@
+%nav{class: 'top-bar', data: {topbar: true}}
+  %ul.title-area
+    %li.name
+      %h1= link_to 'ManOnFire', root_path
+    %li.toggle-topbar.menu-icon
+      %a{href: '#'} Menu
+
+  %section.top-bar-section
+
+    -# Right Nav Section
+    %ul.right
+      %li.active
+        = link_to 'Home', root_path
+
+      -#
+        %li.has-dropdown
+          %a{href: '#'} Right Button Dropdown
+          %ul.dropdown
+            %li
+              %a{href: '#'} First Link In Dropdown
+
+
+    -# Left Nav Section
+      %ul.left
+        %li
+          %a{href: '#'} Left Nav Button
