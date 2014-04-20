@@ -1,0 +1,6 @@
+.badge
+  .feed
+    %ul.no_bullets
+      - @feed.items.each do |feed_item|
+        %li
+          = raw feed_item.content

@@ -12,11 +12,11 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'foundation-rails'
 gem 'rails_12factor'
+gem 'haml'
+gem 'feed_parser'
 
 gem 'better_errors'
 gem 'binding_of_caller'
-
-gem 'haml'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
