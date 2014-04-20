@@ -1,6 +1,18 @@
-.badge
-  .feed
-    %ul.no_bullets
-      - @feed.items.each do |feed_item|
-        %li
-          = raw feed_item.content
+.row
+  .small-12.medium-12.large-6.columns
+    .badge
+      .feed
+        %ul.no_bullets.right_margin
+          - @am_feed.items.each do |feed_item|
+            %li
+              = raw feed_item.content
+              %hr/
+
+  .small-12.medium-12.large-6.columns
+    .badge
+      .feed
+        %ul.no_bullets.right_margin
+          - @fm_feed.items.each do |feed_item|
+            %li
+              = raw feed_item.content
+              %hr/
