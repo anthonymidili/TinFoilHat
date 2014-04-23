@@ -13,7 +13,6 @@ gem 'jbuilder', '~> 1.2'
 gem 'foundation-rails', '~> 5.2.2'
 gem 'rails_12factor', '~> 0.0.2'
 gem 'haml', '~> 4.0.5'
-gem 'feed_parser'
 
 gem 'better_errors'
 gem 'binding_of_caller'
