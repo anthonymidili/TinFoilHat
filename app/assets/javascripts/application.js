@@ -16,3 +16,5 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(function(){ GitHubActivity.feed({ username: "anthonymidili", selector: "#feed-anthonymidili" }); });
