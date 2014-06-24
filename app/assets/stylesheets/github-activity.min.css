@@ -1,13 +1,12 @@
 .github-activity-feed {
     width: 100%;
-    height: 400px;
+    height: 450px;
     background: #fff;
     font-weight: bold;
     font-size: 14px;
     font-family: Helvetica, arial, freesans, clean, sans-serif;
     line-height: 1.3;
     overflow-y: auto;
-    border: 1px solid #ddd;
 }
 
 .github-activity-feed h1, .github-activity-feed h2, .github-activity-feed h3,
@@ -63,9 +62,9 @@
 
 .github-activity-feed .header {
     position: absolute;
-    top: 1px;
+    top: 0px;
     left: 1px;
-    width: calc(100% - 19px);
+    width: calc(100% - 18px);
     padding: 10px;
     height: 88px;
     border-bottom: 1px solid #ddd;
@@ -81,12 +80,12 @@
 
 .github-activity-feed .footer {
     position: absolute;
-    bottom: 1px;
+    bottom: 0px;
     left: 1px;
     padding: 5px;
     border-top: 1px solid #ddd;
     height: 27px;
-    width: calc(100% - 19px);
+    width: calc(100% - 18px);
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
