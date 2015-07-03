@@ -1,19 +1,16 @@
 source 'https://rubygems.org'
-
-ruby '2.1.2'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.1.4'
-gem 'pg', '~> 0.17.1'
-gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '~> 2.5.0'
-gem 'coffee-rails', '~> 4.0.1'
-gem 'jquery-rails', '~> 3.1.0'
-gem 'jbuilder', '~> 2.0.7'
-gem 'foundation-rails', '~> 5.2.3'
+gem 'rails', '~> 4.2.3'
+gem 'pg', '~> 0.18.1'
+gem 'sass-rails', '~> 5.0.3'
+gem 'uglifier', '~> 2.7.1'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails', '~> 4.0.4'
+gem 'jbuilder', '~> 2.3.0'
+gem 'foundation-rails', '~> 5.5.2'
 gem 'rails_12factor', '~> 0.0.2'
 gem 'haml', '~> 4.0.5'
-gem 'tzinfo-data', '~> 1.2014.3'
+gem 'tzinfo-data', '~> 1.2015.5'
 
 gem 'better_errors'
 gem 'binding_of_caller'
@@ -37,3 +34,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+ruby '2.2.2'
