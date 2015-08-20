@@ -11,7 +11,7 @@ gem 'foundation-rails', '~> 5.5.2'
 gem 'rails_12factor', '~> 0.0.2'
 gem 'haml', '~> 4.0.5'
 gem 'tzinfo-data', '~> 1.2015.5'
-gem 'figaro', '~> 1.0.0'
+gem 'figaro', '~> 1.1.1'
 
 # Procfile
 gem 'puma', '~> 2.13.4'
