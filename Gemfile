@@ -12,6 +12,10 @@ gem 'rails_12factor', '~> 0.0.2'
 gem 'haml', '~> 4.0.5'
 gem 'tzinfo-data', '~> 1.2015.5'
 
+# Used to render github icons
+gem 'octicons-rails'
+gem 'mustache-js-rails'
+
 gem 'better_errors'
 gem 'binding_of_caller'
 
