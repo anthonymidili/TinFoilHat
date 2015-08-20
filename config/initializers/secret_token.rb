@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ManOnFire::Application.config.secret_key_base = 'b1902039bce113fa4e0bf4bcc433f6256b532204bc68c91b323373607f36a8ad25adbe119abf6282c83918e4c065e00047ae6a09bddad4fc5993465798dcee66'
+ManOnFire::Application.config.secret_key_base = ENV['SECRET_TOKEN']

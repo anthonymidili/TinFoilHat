@@ -11,10 +11,15 @@ gem 'foundation-rails', '~> 5.5.2'
 gem 'rails_12factor', '~> 0.0.2'
 gem 'haml', '~> 4.0.5'
 gem 'tzinfo-data', '~> 1.2015.5'
+gem 'figaro', '~> 1.0.0'
+
+# Procfile
+gem 'puma', '~> 2.13.4'
+gem 'rack-timeout', '~> 0.2.4'
 
 # Used to render github icons
-gem 'octicons-rails'
-gem 'mustache-js-rails'
+gem 'octicons-rails', '~> 2.1.1'
+gem 'mustache-js-rails', '~> 2.0.2'
 
 gem 'better_errors'
 gem 'binding_of_caller'

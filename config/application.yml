@@ -1,0 +1,13 @@
+SECRET_TOKEN: "b1902039bcf113fa4e0bf4bcc433f6256b532204bc68c91b323373607f36a9ad25adbe119abf6282c83918e4c065e00047ae6a09bddad4fc5993a65798dcee66"
+
+MIN_THREADS: "1"
+MAX_THREADS: "1"
+WEB_CONCURRENCY: "4"
+
+staging:
+  RACK_ENV: "staging"
+  RAILS_ENV: "staging"
+
+production:
+  RACK_ENV: "production"
+  RAILS_ENV: "production"
