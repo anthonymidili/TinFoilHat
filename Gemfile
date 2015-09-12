@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.3'
+gem 'rails', '~> 4.2.4'
 gem 'pg', '~> 0.18.1'
 gem 'sass-rails', '~> 5.0.3'
 gem 'uglifier', '~> 2.7.1'
@@ -15,7 +15,7 @@ gem 'figaro', '~> 1.1.1'
 
 # Procfile
 gem 'puma', '~> 2.13.4'
-gem 'rack-timeout', '~> 0.2.4'
+gem 'rack-timeout', '~> 0.3.2'
 
 # Used to render github icons
 gem 'octicons-rails', '~> 2.1.1'
