@@ -7,14 +7,14 @@ gem 'uglifier', '~> 2.7.1'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails', '~> 4.0.4'
 gem 'jbuilder', '~> 2.3.0'
-gem 'foundation-rails', '~> 5.5.2'
+gem 'foundation-rails', '~> 5.5.3'
 gem 'rails_12factor', '~> 0.0.2'
 gem 'haml', '~> 4.0.5'
-gem 'tzinfo-data', '~> 1.2015.5'
+gem 'tzinfo-data', '~> 1.2015.7'
 gem 'figaro', '~> 1.1.1'
 
 # Procfile
-gem 'puma', '~> 2.13.4'
+gem 'puma', '~> 2.14.0'
 gem 'rack-timeout', '~> 0.3.2'
 
 # Used to render github icons
