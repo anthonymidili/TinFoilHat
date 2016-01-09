@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.4'
+gem 'rails', '~> 4.2.5'
 gem 'pg', '~> 0.18.1'
 gem 'sass-rails', '~> 5.0.3'
 gem 'uglifier', '~> 2.7.1'
@@ -44,4 +44,4 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-ruby '2.2.2'
+ruby '2.3.0'
