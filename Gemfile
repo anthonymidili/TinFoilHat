@@ -14,8 +14,8 @@ gem 'tzinfo-data', '~> 1.2016.3'
 gem 'figaro', '~> 1.1.1'
 
 # Procfile
-gem 'puma', '~> 3.2.0'
-gem 'rack-timeout', '~> 0.3.2'
+gem 'puma', '~> 3.4.0'
+gem 'rack-timeout', '~> 0.4.2'
 
 # Used to render github icons
 gem 'octicons-rails', '~> 2.1.1'
