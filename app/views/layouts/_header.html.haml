@@ -1,26 +1,12 @@
-%nav{class: 'top-bar', data: {topbar: true}}
-  %ul.title-area
-    %li.name
+.top-bar
+  .top-bar-title
+    %span{data: {hide_for: 'medium', responsive_toggle: 'responsive-menu'}}
+      %span.menu-icon{data: {toggle: true}}
+    .title-bar-title
       = link_to root_path do
         = image_tag 'ManOnFire/ManOnFire_Header_Yellow.svg', class: 'MOF_logo'
-    %li.toggle-topbar.menu-icon
-      %a{href: '#'} Menu
-
-  %section.top-bar-section
-
-    -# Right Nav Section
-    %ul.right
-      %li
-        = link_to 'Home', root_path
-      -#
-        %li.has-dropdown
-          %a{href: '#'} Right Button Dropdown
-          %ul.dropdown
-            %li
-              %a{href: '#'} First Link In Dropdown
-
-    -# Left Nav Section
-    -#
-      %ul.left
-        %li
-          %a{href: '#'} Left Nav Button
+  #responsive-menu
+    .top-bar-right
+      %ul.menu.vertical.medium-horizontal{data: {responsive_menu: 'accordion medium-dropdown'}}
+        %li= link_to 'Home', root_path
+        %li= link_to 'About', about_path

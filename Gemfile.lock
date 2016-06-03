@@ -157,6 +157,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
+    turbolinks (2.5.3)
+      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     tzinfo-data (1.2016.4)
@@ -185,6 +187,7 @@ DEPENDENCIES
   rails_12factor (~> 0.0.3)
   sass-rails (~> 5.0.3)
   sdoc
+  turbolinks (~> 2.5.3)
   tzinfo-data (~> 1.2016.3)
   uglifier (~> 3.0.0)
 

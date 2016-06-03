@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails', '~> 4.1.1'
 gem 'jbuilder', '~> 2.5.0'
 gem 'foundation-rails', '~> 6.2.3'
+gem 'turbolinks', '~> 2.5.3'
 gem 'rails_12factor', '~> 0.0.3', group: [:staging, :production]
 gem 'haml', '~> 4.0.5'
 gem 'tzinfo-data', '~> 1.2016.3'

@@ -15,3 +15,28 @@
 .pad_bottom {
   padding-bottom: 5px;
 }
+
+ul.inline-list {
+  margin: 0px 0px 1.0625rem -1.375rem;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+ul.inline-list > li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin-left: 1.375rem;
+}
+
+.top-bar {
+  padding: 1px 8px 1px 8px;
+
+  .top-bar-right a {
+    color: white;
+    &:hover {
+      background-color: black;
+    }
+  }
+}
