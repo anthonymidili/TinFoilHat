@@ -1,25 +1,26 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.6'
-gem 'pg', '~> 0.18.1'
-gem 'sass-rails', '~> 5.0.3'
-gem 'uglifier', '~> 3.0.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails', '~> 4.1.1'
-gem 'jbuilder', '~> 2.4.1'
-gem 'foundation-rails', '~> 5.5.3'
-gem 'rails_12factor', '~> 0.0.2'
-gem 'haml', '~> 4.0.5'
-gem 'tzinfo-data', '~> 1.2016.3'
-gem 'figaro', '~> 1.1.1'
 
 # Procfile
 gem 'puma', '~> 3.4.0'
 gem 'rack-timeout', '~> 0.4.2'
 
+gem 'pg', '~> 0.18.1'
+gem 'sass-rails', '~> 5.0.3'
+gem 'uglifier', '~> 3.0.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails', '~> 4.1.1'
+gem 'jbuilder', '~> 2.5.0'
+gem 'foundation-rails', '~> 5.5.3'
+gem 'rails_12factor', '~> 0.0.3', group: [:staging, :production]
+gem 'haml', '~> 4.0.5'
+gem 'tzinfo-data', '~> 1.2016.3'
+gem 'figaro', '~> 1.1.1'
+
 # Used to render github icons
 gem 'octicons-rails', '~> 2.1.1'
-gem 'mustache-js-rails', '~> 2.0.2'
+gem 'mustache-js-rails', '~> 2.0.4'
 
 gem 'better_errors'
 gem 'binding_of_caller'
@@ -44,4 +45,4 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-ruby '2.3.0'
+ruby '2.3.1'
