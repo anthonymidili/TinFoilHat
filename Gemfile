@@ -21,7 +21,7 @@ gem 'figaro', '~> 1.1.1'
 
 # Used to render github icons
 # octicons-rails seems to not be compatible with rails 5
-gem 'octicons-rails'
+# gem 'octicons-rails'
 gem 'mustache-js-rails', '~> 2.0.4'
 
 gem 'better_errors'
