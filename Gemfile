@@ -8,9 +8,9 @@ gem 'rack-timeout', '~> 0.4.2'
 
 gem 'pg', '~> 0.18.1'
 gem 'sass-rails', '~> 5.0.3'
-gem 'uglifier', '~> 3.0.0'
+gem 'uglifier', '~> 3.0.2'
 gem 'coffee-rails', '~> 4.2.1'
-gem 'jquery-rails', '~> 4.1.1'
+gem 'jquery-rails', '~> 4.2.1'
 gem 'jbuilder', '~> 2.6.0'
 gem 'foundation-rails', '~> 6.2.3'
 gem 'turbolinks', '~> 5.0.1'
@@ -20,7 +20,8 @@ gem 'tzinfo-data', '~> 1.2016.3'
 gem 'figaro', '~> 1.1.1'
 
 # Used to render github icons
-# gem 'octicons-rails'
+# octicons-rails seems to not be compatible with rails 5
+gem 'octicons-rails'
 gem 'mustache-js-rails', '~> 2.0.4'
 
 gem 'better_errors'
