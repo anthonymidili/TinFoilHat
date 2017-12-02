@@ -1,50 +1,42 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 5.1.4'
 
 # Procfile
-gem 'puma', '~> 3.6.0'
-gem 'rack-timeout', '~> 0.4.2'
+gem 'puma', '~> 3.11.0'
 
-gem 'pg', '~> 0.18.1'
-gem 'sass-rails', '~> 5.0.3'
-gem 'uglifier', '~> 3.0.2'
-gem 'coffee-rails', '~> 4.2.1'
-gem 'jquery-rails', '~> 4.2.1'
-gem 'jbuilder', '~> 2.6.0'
+gem 'pg', '~> 0.21.0'
+gem 'sass-rails', '~> 5.0.7'
+gem 'uglifier', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.2'
+gem 'jquery-rails', '~> 4.3.1'
+gem 'jbuilder', '~> 2.7.0'
 gem 'foundation-rails', '~> 6.2.3'
 gem 'turbolinks', '~> 5.0.1'
-gem 'rails_12factor', '~> 0.0.3', group: [:staging, :production]
-gem 'haml', '~> 4.0.5'
-gem 'tzinfo-data', '~> 1.2016.3'
+gem 'haml', '~> 5.0.1'
+gem 'haml-rails', '~> 1.0.0'
+
 gem 'figaro', '~> 1.1.1'
 
 # Used to render github icons
 # octicons-rails seems to not be compatible with rails 5
 # gem 'octicons-rails'
-gem 'mustache-js-rails', '~> 2.0.4'
+# gem 'mustache-js-rails', '~> 2.0.4'
 
-gem 'better_errors'
-gem 'binding_of_caller'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Shim to load environment variables from .env
+  gem 'dotenv-rails'
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
-ruby '2.3.1'
+ruby '2.4.2'
