@@ -28,8 +28,5 @@ bundler_stubs/
 # Ignore ENV file
 .env
 
-# Ignore application configuration
-config/application.yml
-
 # Ignore local rbenv, ruby version
 .ruby-version

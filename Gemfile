@@ -16,8 +16,6 @@ gem 'turbolinks', '~> 5.0.1'
 gem 'haml', '~> 5.0.1'
 gem 'haml-rails', '~> 1.0.0'
 
-gem 'figaro', '~> 1.1.1'
-
 # Used to render github icons
 # octicons-rails seems to not be compatible with rails 5
 # gem 'octicons-rails'
