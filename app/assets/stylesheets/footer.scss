@@ -2,15 +2,16 @@ html, body {height: 100%;}
 
 #wrap {min-height: 100%;}
 
-#main {padding-bottom: 207px;} /* must be same height as the footer */
+#main {padding-bottom: 300px;} /* must be same height as the footer */
 
 footer {
   position: relative;
-  margin-top: -207px; /* negative value of footer height */
-  height: 207px;
+  margin-top: -300px; /* negative value of footer height */
+  height: 300px;
   clear:both;
 
   #style_footer {
+    height: 212px;
     border-style: solid;
     border-width: 1px;
     border-color: #f88f24;

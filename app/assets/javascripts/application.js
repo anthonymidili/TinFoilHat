@@ -12,11 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require mustache
 //= require foundation
 //= require turbolinks
 //= require_tree .
-
-$(document).on('ready page:load', function () {
-    $(document).foundation();
-});
