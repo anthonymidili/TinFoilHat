@@ -1,0 +1,23 @@
+.top-bar {
+  padding: 1px 8px 1px 8px;
+
+  .top-bar-right a {
+    color: white;
+    &:hover {
+      background-color: black;
+    }
+  }
+
+  /* This selects the top bars menu dropdown when in small view. */
+  ul[role=tree] {
+  background: $light-tar;
+}
+
+  .MOF_logo {
+    height: 60px;
+  }
+
+  .menu-icon {
+    width: 80px;
+  }
+}
