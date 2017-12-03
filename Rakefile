@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ManOnFire::Application.load_tasks
+TinFoilHat::Application.load_tasks
