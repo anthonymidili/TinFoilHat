@@ -1,4 +1,4 @@
-# TheTinFoilHat.co *(v-2.0.1)*
+# TheTinFoilHat.co *(v-2.0.2)*
 
 This is the home page for 
 [The Tin Foil Hat Company](https://ttfh.co). 
