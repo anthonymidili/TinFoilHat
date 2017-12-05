@@ -14,11 +14,17 @@ footer {
     border-style: solid;
     border-width: 1px;
     padding: 20px;
-    border-color: #c6c8c9;
-    background: #c6c8c9;
-    color: #373a3c;
+    border-color: $medium-gray;
+    background: $medium-gray;
+    color: $tar;
 
-    a {color: #373a3c;}
-    a:hover {color: #6d6d6d;}
+    a {color: $tar;}
+    a:hover {color: $light-tar;}
+  }
+
+
+  .version {
+    float: right;
+    color: $light-tar;
   }
 }

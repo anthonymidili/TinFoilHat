@@ -1,7 +1,7 @@
 .top-bar {
-  padding: 1px 8px 1px 8px;
   margin-bottom: 20px;
 
+  /* Modify the top bar color scheme for links */
   .top-bar-right a {
     color: white;
     &:hover {
@@ -9,15 +9,21 @@
     }
   }
 
-  /* This selects the top bars menu dropdown when in small view. */
+  /* This selects the top bars menu dropdown when in small view */
   ul[role=tree] {
   background: $light-tar;
 }
 
-  .MOF_logo {
-    height: 60px;
+  .TFH_logo {
+    @include breakpoint(small only) {
+      height: 40px;
+    }
+    @include breakpoint(medium) {
+      height: 60px;
+    }
   }
 
+  /* Enlarge the menu icon */
   .menu-icon {
     width: 80px;
   }

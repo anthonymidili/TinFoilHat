@@ -1,11 +1,11 @@
 .badged {
-  border: 1px solid #bbbbbb;
+  border: 1px solid $dark-gray;
   margin-bottom: 2em;
 }
 
 .black_links {
-  a {color: black;}
-  a:hover {color: #0078a0;}
+  a {color: $black;}
+  a:hover {color: $tar;}
 }
 
 img.developer {
