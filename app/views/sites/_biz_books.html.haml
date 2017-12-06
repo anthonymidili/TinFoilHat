@@ -1,0 +1,24 @@
+.row
+  .small-12.columns
+    .pad_bottom
+      = link_to 'https://codeclimate.com/github/anthonymidili/BizBooks/maintainability' do
+        = image_tag 'https://api.codeclimate.com/v1/badges/6744e8bdd00b2b21f073/maintainability', alt: 'CodeClimate Badge'
+    .badged.black_links
+      = link_to 'https://bizbooks.me', target: '_blank' do
+        .row
+          .medium-7.columns
+            .pad_sides
+              %h2 BizBooks
+              %hr/
+
+              %p
+                I personally love business tools. This app will be yet another example of just that.
+                Great for small to medium businesses.
+              %p
+                BizBooks helps you track where your money is going and where it is coming from. Tax time
+                is a breeze with your printable ledger book.
+              %p
+                Have employees? Great! We can help you track their worked times too.
+
+          .medium-5.columns
+            = image_tag 'screenshots/biz_books.png', class: 'site_image'

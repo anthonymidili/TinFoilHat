@@ -1,0 +1,22 @@
+.row
+  .small-12.columns
+    .pad_bottom
+      = link_to 'https://codeclimate.com/github/anthonymidili/Bullhorn/maintainability' do
+        = image_tag 'https://api.codeclimate.com/v1/badges/c4dd2bd6c38e8dd1b859/maintainability', alt: 'CodeClimate Badge'
+    .badged.black_links
+      = link_to 'https://bullhorn.ttfh.co', target: '_blank' do
+        .row
+          .medium-7.columns
+            .pad_sides
+              %h2 Bullhorn
+              %hr/
+
+              %p
+                Shout to the world what's on your mind. Follow other users to see what they are shouting about.
+                Just a bunch of people shouting through their bullhorns.
+              %p
+                A nice place to share your thoughts and socialize with others. You can also share your pictures
+                for all to see.
+
+          .medium-5.columns
+            = image_tag 'screenshots/bullhorn.png', class: 'site_image'
