@@ -1,16 +1,17 @@
+$footer-size: 166px;
 html, body {height: 100%;}
 
 #wrap {min-height: 100%;}
 
-#main {padding-bottom: 166px;} /* must be same height as the footer */
+#main {padding-bottom: $footer-size;} /* must be same height as the footer */
 
 footer {
   position: relative;
-  margin-top: -166px; /* negative value of footer height */
-  height: 166px;
-  clear:both;
+  margin-top: -$footer-size; /* negative value of footer height */
+  min-height: $footer-size;
 
   #style_footer {
+    min-height: $footer-size;
     border-style: solid;
     border-width: 1px;
     padding: 20px;
