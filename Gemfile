@@ -3,16 +3,16 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.1.4'
 
 # Procfile
-gem 'puma', '~> 3.11.0'
+gem 'puma', '~> 3.11.2'
 
 gem 'pg', '~> 0.21.0'
 gem 'sass-rails', '~> 5.0.7'
-gem 'uglifier', '~> 4.0.0'
+gem 'uglifier', '~> 4.1.6'
 gem 'coffee-rails', '~> 4.2.2'
 gem 'jquery-rails', '~> 4.3.1'
 gem 'jbuilder', '~> 2.7.0'
 gem 'foundation-rails', '~> 6.4.1'
-gem 'turbolinks', '~> 5.0.1'
+gem 'turbolinks', '~> 5.1.0'
 gem 'haml', '~> 5.0.1'
 gem 'haml-rails', '~> 1.0.0'
 
@@ -37,4 +37,4 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-ruby '2.4.2'
+ruby '2.4.3'
