@@ -30,3 +30,9 @@ bundler_stubs/
 
 # Ignore local asdf, ruby version
 .tool-versions
+
+# Ignore yarn
+/node_modules
+yarn-debug.log*
+.yarn-integrity
+/yarn-error.log
