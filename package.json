@@ -1,0 +1,10 @@
+{
+  "name": "TinFoilHat",
+  "version": "2.0.5",
+  "description": "Learn about the Tin Foil Hat Co.",
+  "main": "ttfh.co",
+  "repository": "ttfh.co",
+  "author": "AMidili <tonywinslow@yahoo.com>",
+  "license": "MIT",
+  "private": false
+}
