@@ -1,20 +1,21 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.2.3'
 
 # Procfile
-gem 'puma', '~> 3.11.2'
+gem 'puma', '~> 3.12.1'
 
-gem 'pg', '~> 0.21.0'
-gem 'sass-rails', '~> 5.0.7'
+gem 'pg', '~> 1.1.4'
+gem 'sassc-rails', '~> 2.1.1'
 gem 'uglifier', '~> 4.1.6'
-gem 'coffee-rails', '~> 4.2.2'
+gem 'coffee-rails', '~> 5.0.0'
 gem 'jquery-rails', '~> 4.3.1'
-gem 'jbuilder', '~> 2.7.0'
-gem 'foundation-rails', '~> 6.4.1'
-gem 'turbolinks', '~> 5.1.0'
+gem 'jbuilder', '~> 2.8.0'
+gem 'foundation-rails', '~> 6.5.3'
+gem 'turbolinks', '~> 5.2.0'
 gem 'haml', '~> 5.0.1'
-gem 'haml-rails', '~> 1.0.0'
+gem 'haml-rails', '~> 2.0.0'
+gem 'bootsnap', require: false
 
 # Used to render github icons
 # octicons-rails seems to not be compatible with rails 5
@@ -37,4 +38,4 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-ruby '2.4.3'
+ruby '2.6.3'

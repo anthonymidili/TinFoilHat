@@ -28,5 +28,5 @@ bundler_stubs/
 # Ignore ENV file
 .env
 
-# Ignore local rbenv, ruby version
-.ruby-version
+# Ignore local asdf, ruby version
+.tool-versions

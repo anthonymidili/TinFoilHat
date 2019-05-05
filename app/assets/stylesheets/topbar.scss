@@ -9,6 +9,10 @@
     }
   }
 
+  .top-bar-right ul li a {
+    background-color: $tar;
+  }
+
   /* This selects the top bars menu dropdown when in small view */
   ul[role=tree] {
   background: $light-tar;
