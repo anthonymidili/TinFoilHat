@@ -3,7 +3,15 @@ html, body {height: 100%;}
 
 #wrap {min-height: 100%;}
 
-#main {padding-bottom: $footer-size;} /* must be same height as the footer */
+#main {
+  padding-bottom: $footer-size; /* must be same height as the footer */
+  /* add the xy grid container */
+  @include xy-grid-container;
+  /* use the grid-margin-x by default with all grid-x's */
+  .grid-x {
+    @extend .grid-margin-x;
+  }
+}
 
 footer {
   position: relative;

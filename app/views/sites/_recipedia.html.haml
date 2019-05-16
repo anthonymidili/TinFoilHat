@@ -1,12 +1,12 @@
-.row
-  .small-12.columns
+.grid-x
+  .small-12.cell
     .pad_bottom
       = link_to 'https://codeclimate.com/github/anthonymidili/Recipedia/maintainability' do
         = image_tag 'https://api.codeclimate.com/v1/badges/ef6bd84a596e1b816381/maintainability', alt: 'CodeClimate Badge'
     .badged.black_links
       = link_to 'https://recipedia.ttfh.co', target: '_blank' do
-        .row
-          .medium-7.columns
+        .grid-x
+          .medium-7.cell
             .pad_sides
               %h2 Recipedia
               %hr/
@@ -18,5 +18,5 @@
                 Not only can you post your own recipes but you can favor other people's recipes to try them out
                 for yourself. Once you favor a recipe it gets saved to your Recipedia personal cookbook.
 
-          .medium-5.columns
+          .medium-5.cell
             = image_tag 'screenshots/recipedia.png', class: 'site_image'

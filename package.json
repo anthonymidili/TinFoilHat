@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "engines": {
-    "yarn": "1.15",
+    "yarn": "1.16",
     "node": "12.1.0"
   }
 }
