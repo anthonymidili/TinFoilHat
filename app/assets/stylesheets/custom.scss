@@ -23,3 +23,10 @@ ul.inline-list > li {
   list-style: none;
   margin-left: 1.375rem;
 }
+
+.flex-center-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
