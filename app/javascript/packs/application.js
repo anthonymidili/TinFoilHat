@@ -22,12 +22,13 @@ require("channels")
 require("jquery")
 
 // Foundation setup.
-import 'foundation-sites'
-Foundation.addToJquery($)
+import Foundation from 'foundation-sites'
 $(document).on('turbolinks:load', function() {
   $(document).foundation()
 });
-require("foundation-sites/dist/css/foundation")
 
 // Custom Stylesheets.
 import 'src/application'
+
+// Images.
+require.context('../images', true)
