@@ -3,10 +3,10 @@ source 'https://rubygems.org'
 gem 'rails', '~> 6.0.0'
 
 # Procfile
-gem 'puma', '~> 4.1.1'
+gem 'puma', '~> 4.3.0'
 
 gem 'pg', '~> 1.1.4'
-gem 'uglifier', '~> 4.1.6'
+gem 'uglifier', '~> 4.2.0'
 gem 'jbuilder', '~> 2.9.1'
 gem 'haml-rails', '~> 2.0.0'
 gem 'bootsnap', require: false
@@ -29,7 +29,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem "better_errors"
   gem "binding_of_caller"
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'listen', '~> 3.2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

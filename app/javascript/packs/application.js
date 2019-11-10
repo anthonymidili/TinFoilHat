@@ -32,3 +32,7 @@ import 'src/application'
 
 // Images.
 require.context('../images', true)
+
+// fontawesome setup.
+import '@fortawesome/fontawesome-free/js/all'
+import '@fortawesome/fontawesome-free/css/all'

@@ -10,11 +10,8 @@
         %h4 Anthony Midili
         %ul.inline-list
           %li
-            = link_to 'https://www.facebook.com/tonywinslow13', target: '_blank' do
-              = image_pack_tag 'social_nework_icons/FB_f_Logo_blue_29.png'
-          %li
-            = link_to 'https://plus.google.com/+AnthonyMidili', target: '_blank' do
-              = image_pack_tag 'social_nework_icons/g_plus_29.png'
-          %li
             = link_to 'https://twitter.com/AnthonyMidili', target: '_blank' do
               = image_pack_tag 'social_nework_icons/twitter_logo_blue_29.png'
+          %li
+            = mail_to 'tonywinslow13@gmail.com', subject: 'The Tin Foil Hat Company' do
+              %i.fas.fa-envelope
