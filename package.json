@@ -8,8 +8,9 @@
   "license": "MIT",
   "private": false,
   "engines": {
-    "yarn": "1.19.1",
-    "node": "12.12.0"
+    "yarn": "1.22.0",
+    "node": "13.8.0",
+    "npm": "6.13.7"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",

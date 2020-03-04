@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+ruby '2.7.0'
+
 gem 'rails', '~> 6.0.0'
 
 # Procfile
 gem 'puma', '~> 4.3.0'
 
-gem 'pg', '~> 1.1.4'
-gem 'uglifier', '~> 4.2.0'
-gem 'jbuilder', '~> 2.9.1'
+gem 'pg', '~> 1.2.2'
+gem 'jbuilder', '~> 2.10.0'
 gem 'haml-rails', '~> 2.0.0'
 gem 'bootsnap', require: false
 
@@ -34,5 +35,3 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
-ruby '2.6.4'
