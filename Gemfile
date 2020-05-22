@@ -5,7 +5,7 @@ ruby '2.7.0'
 gem 'rails', '~> 6.0.0'
 
 # Procfile
-gem 'puma', '~> 4.3.0'
+gem 'puma', '~> 4.3.5'
 
 gem 'pg', '~> 1.2.2'
 gem 'jbuilder', '~> 2.10.0'
