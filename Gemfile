@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.7.0'
+ruby '2.7.1'
 
 gem 'rails', '~> 6.0.0'
 
@@ -12,7 +12,7 @@ gem 'jbuilder', '~> 2.10.0'
 gem 'haml-rails', '~> 2.0.0'
 gem 'bootsnap', require: false
 
-gem 'webpacker', '~> 4.x'
+gem 'webpacker', '~> 5.x'
 
 # Used to render github icons
 # octicons-rails seems to not be compatible with rails 5
