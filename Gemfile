@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.7.1'
+ruby '2.7.2'
 
 gem 'rails', '~> 6.0.0'
 
 # Procfile
-gem 'puma', '~> 4.3.0'
+gem 'puma', '~> 5.0.4'
 
 gem 'pg', '~> 1.2.2'
 gem 'jbuilder', '~> 2.10.0'
@@ -30,7 +30,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem "better_errors"
   gem "binding_of_caller"
-  gem 'listen', '~> 3.2.0'
+  gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
