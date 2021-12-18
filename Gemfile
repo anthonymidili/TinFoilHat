@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '3.0.2'
+ruby '3.0.3'
 
 gem 'rails', '~> 6.1.2'
 
 # Procfile
-gem 'puma', '~> 5.4.0'
+gem 'puma', '~> 5.5.2'
 
 gem 'pg', '~> 1.2.2'
 gem 'jbuilder', '~> 2.11.0'
