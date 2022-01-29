@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '3.0.3'
+ruby '3.1.0'
 
-gem 'rails', '~> 6.1.2'
+gem 'rails', '~> 7.0.1'
 
 # Procfile
 gem 'puma', '~> 5.5.2'
@@ -22,8 +22,6 @@ gem 'webpacker', '~> 5.x'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # Shim to load environment variables from .env
-  # gem 'dotenv-rails'
 end
 
 group :development do
