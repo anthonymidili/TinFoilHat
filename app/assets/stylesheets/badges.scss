@@ -1,0 +1,19 @@
+@use "color_palette";
+
+.badged {
+  border: 1px solid color_palette.$dark-gray;
+  margin-bottom: 2em;
+}
+
+.black_links {
+  a {color: color_palette.$black;}
+  a:hover {color: color_palette.$tar;}
+}
+
+img.developer {
+  max-height: 120px;
+}
+
+img.site_image {
+  padding: 3px;
+}

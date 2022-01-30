@@ -4,15 +4,22 @@ ruby '3.1.0'
 
 gem 'rails', '~> 7.0.1'
 
+# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+gem "sprockets-rails"
+
 # Procfile
 gem 'puma', '~> 5.5.2'
 
 gem 'pg', '~> 1.2.2'
 gem 'jbuilder', '~> 2.11.0'
+gem 'turbo-rails'
+gem 'stimulus-rails'
+
 gem 'haml-rails', '~> 2.0.0'
 gem 'bootsnap', require: false
 
-gem 'webpacker', '~> 5.x'
+gem 'jsbundling-rails'
+gem 'cssbundling-rails'
 
 # Used to render github icons
 # octicons-rails seems to not be compatible with rails 5
@@ -28,8 +35,6 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem "better_errors"
   gem "binding_of_caller"
-  gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  # gem 'spring'
 end

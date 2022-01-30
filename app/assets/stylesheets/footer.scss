@@ -1,4 +1,8 @@
+@use "color_palette";
+@include foundation-everything;
+
 $footer-size: 166px;
+
 html, body {height: 100%;}
 
 #wrap {min-height: 100%;}
@@ -23,17 +27,17 @@ footer {
     border-style: solid;
     border-width: 1px;
     padding: 20px;
-    border-color: $medium-gray;
-    background: $medium-gray;
-    color: $tar;
+    border-color: color_palette.$medium-gray;
+    background: color_palette.$medium-gray;
+    color: color_palette.$tar;
 
-    a {color: $tar;}
-    a:hover {color: $light-tar;}
+    a {color: color_palette.$tar;}
+    a:hover {color: color_palette.$light-tar;}
   }
 
 
   .version {
     float: right;
-    color: $light-tar;
+    color: color_palette.$light-tar;
   }
 }
