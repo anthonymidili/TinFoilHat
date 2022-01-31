@@ -20,21 +20,20 @@
   }
 
   /* This selects the top bars menu dropdown when in small view */
-  ul[role=tree] {
-  background: color_palette.$light-tar;
-}
-
-  .TFH_logo {
-    @include breakpoint(small only) {
-      height: 40px;
-    }
-    @include breakpoint(medium) {
-      height: 60px;
-    }
+    ul[role=tree] {
+    background: color_palette.$light-tar;
   }
 
   /* Enlarge the menu icon */
   .menu-icon {
     width: 80px;
+  }
+}
+
+.TFH_logo {
+  height: 40px;
+
+  @include media-breakpoint-up(md) {
+    height: 60px;
   }
 }

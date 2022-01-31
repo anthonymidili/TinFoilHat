@@ -2,5 +2,9 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "./jquery"
-import "./foundation"
 import '@fortawesome/fontawesome-free/js/all'
+import * as bootstrap from "bootstrap"
+
+// $(document).on('turbo:load', function() {
+//   $(document).foundation();
+// });

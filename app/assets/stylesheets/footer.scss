@@ -1,6 +1,4 @@
 @use "color_palette";
-@include foundation-everything;
-
 $footer-size: 166px;
 
 html, body {height: 100%;}
@@ -9,12 +7,7 @@ html, body {height: 100%;}
 
 #main {
   padding-bottom: $footer-size; /* must be same height as the footer */
-  /* add the xy grid container */
-  @include xy-grid-container;
-  /* use the grid-margin-x by default with all grid-x's */
-  .grid-x {
-    @extend .grid-margin-x;
-  }
+  @extend .container
 }
 
 footer {
