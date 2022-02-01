@@ -6,7 +6,10 @@
 }
 
 .black_links {
-  a {color: color_palette.$black;}
+  a {
+    color: color_palette.$black;
+    text-decoration: none;
+  }
   a:hover {color: color_palette.$tar;}
 }
 

@@ -32,6 +32,10 @@ ul.inline-list > li {
   }
 }
 
+svg, img {
+  max-width: 100% !important;
+}
+
 .flex-center-middle {
   display: flex;
   align-items: center;

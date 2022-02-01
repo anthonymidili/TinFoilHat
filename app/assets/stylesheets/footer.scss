@@ -7,7 +7,7 @@ html, body {height: 100%;}
 
 #main {
   padding-bottom: $footer-size; /* must be same height as the footer */
-  @extend .container
+  @extend .container-xl
 }
 
 footer {
@@ -24,7 +24,10 @@ footer {
     background: color_palette.$medium-gray;
     color: color_palette.$tar;
 
-    a {color: color_palette.$tar;}
+    a {
+      color: color_palette.$tar;
+      text-decoration: none;
+    }
     a:hover {color: color_palette.$light-tar;}
   }
 

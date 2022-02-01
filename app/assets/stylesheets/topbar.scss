@@ -1,33 +1,29 @@
 @use "color_palette";
 
-.top-bar, .top-bar ul, .title-bar {
-    background-color: color_palette.$tar;
+.bg-dark {
+    background-color: color_palette.$tar !important;
 }
 
-.top-bar {
+.navbar {
   margin-bottom: 20px;
+}
 
-  /* Modify the top bar color scheme for links */
-  .top-bar-right a {
-    color: color_palette.$white;
-    &:hover {
-      background-color: color_palette.$black;
-    }
+/* Enlarge the menu icon */
+.navbar-toggler {
+  width: 100px;
+  .navbar-toggler-icon {
+    width: 40px;
   }
+}
 
-  .top-bar-right ul li a {
-    background-color: color_palette.$tar;
+.navbar-collapse {
+  /* Add submenu background color when toggler icon not shown */
+  @include media-breakpoint-down(lg) {
+    background-color: color_palette.$light-tar;
   }
-
-  /* This selects the top bars menu dropdown when in small view */
-    ul[role=tree] {
-    background: color_palette.$light-tar;
-  }
-
-  /* Enlarge the menu icon */
-  .menu-icon {
-    width: 80px;
-  }
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
 }
 
 .TFH_logo {
@@ -36,4 +32,8 @@
   @include media-breakpoint-up(md) {
     height: 60px;
   }
+}
+
+.nav-items-right {
+  margin-left: auto;
 }

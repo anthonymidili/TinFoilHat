@@ -1,12 +1,12 @@
-.grid-x
-  .small-12.cell
+.row
+  .col
     .pad_bottom
       = link_to 'https://codeclimate.com/github/anthonymidili/FishBowl/maintainability' do
         = image_tag 'https://api.codeclimate.com/v1/badges/e43c3d04e7e033395b83/maintainability', alt: 'CodeClimate Badge'
     .badged.black_links
       = link_to 'https://fish-bowl.herokuapp.com', target: '_blank' do
-        .grid-x
-          .medium-7.cell
+        .row
+          .col-md-7
             .pad_sides
               %h2 Fish Bowl
               %hr/
@@ -20,5 +20,5 @@
                 You can use one of our many default species to show who's in your aquarium or create your own species
                 complete with your own picture and information.
 
-          .medium-5.cell
+          .col-md-5
             .flex-center-middle= image_tag 'screenshots/fishbowl.png', class: 'site_image'
