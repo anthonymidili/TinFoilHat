@@ -8,11 +8,11 @@ gem 'rails', '~> 7.0.1'
 gem "sprockets-rails"
 
 # Procfile
-gem 'puma', '~> 5.5.2'
+gem 'puma', '~> 5.6.1'
 
-gem 'pg', '~> 1.2.2'
+gem 'pg', '~> 1.3.1'
 gem 'jbuilder', '~> 2.11.0'
-gem 'turbo-rails'
+# gem 'turbo-rails' # Using node version
 gem 'stimulus-rails'
 
 gem 'haml-rails', '~> 2.0.0'
