@@ -78,8 +78,9 @@ development:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-# production:
-#  <<: *default
-#  database: BizBooks_production
-#  username: BizBooks
-#  password: <%= ENV['BIZBOOKS_DATABASE_PASSWORD'] %>
+production:
+ <<: *default
+ database: TinFoilHat_production
+ username: TinFoilHat
+ password: <%= ENV['TinFoilHat_DATABASE_PASSWORD'] %>
+ url: <%= ENV['DATABASE_URL'] %>
