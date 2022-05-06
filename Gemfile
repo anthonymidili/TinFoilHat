@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '3.1.0'
+ruby '3.1.2'
 
 gem 'rails', '~> 7.0.1'
 
@@ -13,7 +13,7 @@ gem 'puma', '~> 5.6.1'
 gem 'pg', '~> 1.3.1'
 gem 'jbuilder', '~> 2.11.0'
 # gem 'turbo-rails' # Using node version
-gem 'stimulus-rails'
+# gem 'stimulus-rails'
 
 gem 'haml-rails', '~> 2.0.0'
 gem 'bootsnap', require: false
