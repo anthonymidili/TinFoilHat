@@ -1,11 +1,15 @@
+previewsEnabled: true
 databases:
   - name: tin_foil_hat
     databaseName: tin_foil_hat_production
     user: tin_foil_hat
     plan: free
+    previewPlan: free
 
 services:
   - type: web
+    plan: starter
+    previewPlan: free
     name: tin_foil_hat
     env: ruby
     buildCommand: "./bin/render-build.sh"
