@@ -3,13 +3,13 @@ databases:
   - name: tin_foil_hat
     databaseName: tin_foil_hat_production
     user: tin_foil_hat
-    plan: free
-    previewPlan: free
+    plan: starter
+    previewPlan: starter
 
 services:
   - type: web
     plan: starter
-    previewPlan: free
+    previewPlan: starter
     name: tin_foil_hat
     env: ruby
     buildCommand: "./bin/render-build.sh"
