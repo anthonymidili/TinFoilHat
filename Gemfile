@@ -8,7 +8,7 @@ gem 'rails', '~> 7.0.1'
 gem "sprockets-rails"
 
 # Procfile
-gem 'puma', '~> 5.6.1'
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
 gem 'pg', '~> 1.3.1'
 gem 'jbuilder', '~> 2.11.0'

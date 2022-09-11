@@ -1,3 +1,3 @@
-web: bundle exec puma -C config/puma.rb
+web: bundle exec passenger start -p $PORT --max-pool-size $RAILS_MAX_THREADS
 js: yarn build --watch
 css: yarn build:css --watch
