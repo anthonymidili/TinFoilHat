@@ -13,11 +13,9 @@ services:
     name: tin_foil_hat
     env: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec passenger start --max-pool-size $RAILS_MAX_THREADS"
+    startCommand: "bundle exec passenger start"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
           name: tin_foil_hat
           property: connectionString
-      - key: RAILS_MASTER_KEY
-        sync: false
