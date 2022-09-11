@@ -13,7 +13,7 @@ services:
     name: tin_foil_hat
     env: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    startCommand: "bundle exec passenger start --max-pool-size $RAILS_MAX_THREADS"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
