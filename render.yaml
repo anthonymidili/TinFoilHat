@@ -1,21 +1,28 @@
 previewsEnabled: true
 databases:
-  - name: tin_foil_hat
+  - name: tin_foil_hat_database
     databaseName: tin_foil_hat_production
     user: tin_foil_hat
     plan: starter
-    previewPlan: starter
 
 services:
   - type: web
     plan: starter
-    previewPlan: starter
-    name: tin_foil_hat
+    name: tin_foil_hat_web
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec passenger start"
-    envVars:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: tin_foil_hat
-          property: connectionString
+
+envVarGroups:
+- name: tin_foil_hat_env
+  envVars:
+    - key: RAILS_MASTER_KEY
+      generateValue: true
+    - key: DATABASE_URL
+      fromDatabase:
+        name: tin_foil_hat_database
+        property: connectionString
+    - key: WEB_CONCURRENCY
+      value: 2
+    - key: RAILS_MAX_THREADS
+      value: 2
