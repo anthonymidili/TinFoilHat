@@ -80,7 +80,4 @@ development:
 #
 production:
  <<: *default
- database: TinFoilHat_production
- username: TinFoilHat
- password: <%= ENV['TinFoilHat_DATABASE_PASSWORD'] %>
  url: <%= ENV['DATABASE_URL'] %>
