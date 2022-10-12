@@ -10,12 +10,12 @@ gem "sprockets-rails"
 # Procfile
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
-gem 'pg', '~> 1.3.1'
+gem 'pg', '~> 1.4.4'
 gem 'jbuilder', '~> 2.11.0'
 # gem 'turbo-rails' # Using node version
 # gem 'stimulus-rails'
 
-gem 'haml-rails', '~> 2.0.0'
+gem 'haml-rails', '~> 2.1.0'
 gem 'bootsnap', require: false
 
 gem 'jsbundling-rails'
