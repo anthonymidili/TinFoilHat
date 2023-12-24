@@ -2,13 +2,13 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 ruby '3.2.2'
 
-gem 'rails', '~> 7.0.1'
+gem 'rails', '~> 7.1.2'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
 # Procfile
-gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
+gem "passenger", ">= 5.0.25"
 
 gem 'pg', '~> 1.5.3'
 gem 'jbuilder', '~> 2.11.0'
