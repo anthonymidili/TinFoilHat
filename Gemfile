@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '3.2.2'
+ruby '3.3.1'
 
 gem 'rails', '~> 7.1.2'
 
@@ -11,7 +11,7 @@ gem "sprockets-rails"
 gem "passenger", ">= 5.0.25"
 
 gem 'pg', '~> 1.5.3'
-gem 'jbuilder', '~> 2.11.0'
+gem 'jbuilder', '~> 2.12.0'
 # gem 'turbo-rails' # Using node version
 # gem 'stimulus-rails'
 
