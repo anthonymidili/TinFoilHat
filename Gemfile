@@ -15,8 +15,8 @@ gem 'jbuilder', '~> 2.12.0'
 gem 'turbo-rails' # Using node version
 gem 'stimulus-rails'
 # Use Redis for Action Cable
-gem "redis", "~> 5.3.0"
-gem 'sidekiq', '~> 7.3.2'
+# gem "redis", "~> 5.3.0"
+# gem 'sidekiq', '~> 7.3.2'
 
 gem 'haml-rails', '~> 2.1.0'
 gem 'bootsnap', require: false

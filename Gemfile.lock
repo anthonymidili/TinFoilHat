@@ -187,20 +187,10 @@ GEM
     rake (13.2.1)
     rdoc (6.7.0)
       psych (>= 4.0.0)
-    redis (5.3.0)
-      redis-client (>= 0.22.0)
-    redis-client (0.22.2)
-      connection_pool
     reline (0.5.10)
       io-console (~> 0.5)
     rouge (4.3.0)
     securerandom (0.3.1)
-    sidekiq (7.3.2)
-      concurrent-ruby (< 2)
-      connection_pool (>= 2.3.0)
-      logger
-      rack (>= 2.2.4)
-      redis-client (>= 0.22.2)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -243,8 +233,6 @@ DEPENDENCIES
   passenger (>= 5.0.25)
   pg (~> 1.5.3)
   rails (~> 7.2.1)
-  redis (~> 5.3.0)
-  sidekiq (~> 7.3.2)
   sprockets-rails
   stimulus-rails
   turbo-rails
