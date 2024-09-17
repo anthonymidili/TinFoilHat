@@ -11,7 +11,7 @@ gem "sprockets-rails"
 gem "passenger", ">= 5.0.25"
 
 gem 'pg', '~> 1.5.3'
-gem 'jbuilder', '~> 2.12.0'
+gem 'jbuilder', '~> 2.13.0'
 gem 'turbo-rails' # Using node version
 gem 'stimulus-rails'
 # Use Redis for Action Cable
