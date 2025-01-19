@@ -73,6 +73,22 @@ GEM
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
     ast (2.4.2)
+    aws-eventstream (1.3.0)
+    aws-partitions (1.1040.0)
+    aws-sdk-core (3.216.0)
+      aws-eventstream (~> 1, >= 1.3.0)
+      aws-partitions (~> 1, >= 1.992.0)
+      aws-sigv4 (~> 1.9)
+      jmespath (~> 1, >= 1.6.1)
+    aws-sdk-kms (1.97.0)
+      aws-sdk-core (~> 3, >= 3.216.0)
+      aws-sigv4 (~> 1.5)
+    aws-sdk-s3 (1.178.0)
+      aws-sdk-core (~> 3, >= 3.216.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.5)
+    aws-sigv4 (1.11.0)
+      aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     benchmark (0.4.0)
     better_errors (2.10.1)
@@ -127,7 +143,7 @@ GEM
       haml (>= 4.0.6)
       railties (>= 5.1)
     hirb (0.7.3)
-    i18n (1.14.6)
+    i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     interactive_editor (0.0.12)
       spoon (~> 0.0.6)
@@ -157,6 +173,7 @@ GEM
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jmespath (1.6.2)
     jsbundling-rails (1.3.1)
       railties (>= 6.0.0)
     json (2.9.1)
@@ -190,7 +207,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.1-x86_64-darwin)
+    nokogiri (1.18.2-x86_64-darwin)
       racc (~> 1.4)
     object_shadow (1.1.1)
     os (1.1.4)
@@ -209,7 +226,7 @@ GEM
       activesupport (>= 7.0.0)
       rack
       railties (>= 7.0.0)
-    psych (5.2.2)
+    psych (5.2.3)
       date
       stringio
     racc (1.8.1)
@@ -279,7 +296,7 @@ GEM
     rubocop-performance (1.23.1)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    rubocop-rails (2.28.0)
+    rubocop-rails (2.29.0)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.52.0, < 2.0)
@@ -293,6 +310,8 @@ GEM
     ruby_engine (2.0.3)
     ruby_version (1.0.3)
     securerandom (0.4.1)
+    sitemap_generator (6.3.0)
+      builder (~> 3.0)
     spoon (0.0.6)
       ffi
     stimulus-rails (1.3.4)
@@ -330,6 +349,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
+  aws-sdk-s3
   better_errors
   binding_of_caller
   bootsnap
@@ -346,6 +366,7 @@ DEPENDENCIES
   propshaft (~> 1.1.0)
   rails (~> 8.0.1)
   rubocop-rails-omakase
+  sitemap_generator
   stimulus-rails
   turbo-rails
   tzinfo-data

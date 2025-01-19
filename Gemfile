@@ -29,6 +29,11 @@ gem "cssbundling-rails"
 # gem 'octicons-rails'
 # gem 'mustache-js-rails', '~> 2.0.4'
 
+# https://github.com/kjvarga/sitemap_generator
+# run [rake sitemap:refresh] in production
+gem "sitemap_generator"
+gem "aws-sdk-s3", require: false
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [ :mri, :mingw, :x64_mingw ]
