@@ -4,4 +4,4 @@ User-agent: Googlebot
 User-agent: *
 Disallow:
 
-Sitemap: https://bullhornxl.com/sitemap.xml
+Sitemap: https://tinfoilhat.co/sitemap.xml
