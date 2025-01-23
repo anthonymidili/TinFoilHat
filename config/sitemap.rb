@@ -17,4 +17,7 @@ SitemapGenerator::Sitemap.adapter = SitemapGenerator::AwsSdkAdapter.new(
 
 SitemapGenerator::Sitemap.create do
   add "/"
+  add "/about"
+  add "/about/anthony_midili"
+  add "/about/frank_mattia"
 end
