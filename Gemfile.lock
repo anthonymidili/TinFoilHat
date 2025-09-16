@@ -368,7 +368,6 @@ DEPENDENCIES
   binding_of_caller
   bootsnap
   brakeman
-  byebug
   cssbundling-rails
   haml-rails (~> 2.1.0)
   hirb
@@ -384,7 +383,6 @@ DEPENDENCIES
   sitemap_generator
   stimulus-rails
   turbo-rails
-  tzinfo-data
   web-console (>= 3.3.0)
 
 RUBY VERSION
