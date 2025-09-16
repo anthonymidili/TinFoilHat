@@ -1,18 +1,19 @@
 source "https://rubygems.org"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby "3.3.4"
+ruby "3.4.4"
 
 gem "rails", "~> 8.0.1"
 
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
-gem "propshaft", "~> 1.1.0"
+gem "propshaft", "~> 1.2.1"
 
 # Procfile
-gem "passenger", ">= 5.0.25"
+gem "passenger", ">= 5.3.2"
 
-gem "pg", "~> 1.5.3"
-gem "jbuilder", "~> 2.13.0"
+gem "pg", "~> 1.6.2"
+gem "jbuilder", "~> 2.14.1"
 gem "turbo-rails" # Using node version
+
 gem "stimulus-rails"
 # Use Redis for Action Cable
 # gem "redis", "~> 5.3.0"
@@ -36,7 +37,7 @@ gem "aws-sdk-s3", require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem "byebug", platforms: [ :mri, :mingw, :x64_mingw ]
+  gem "byebug", platforms: [ :windows ]
 end
 
 group :development do
@@ -51,7 +52,8 @@ group :development do
   gem "brakeman", require: false
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem "hirb"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [ :windows, :mingw, :mswin, :x64_mingw, :jruby ]
+gem "tzinfo-data", platforms: [ :windows ]
