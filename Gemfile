@@ -38,6 +38,7 @@ gem "aws-sdk-s3", require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug" if Gem.win_platform?
+  # gem "dotenv-rails"
 end
 
 group :development do
