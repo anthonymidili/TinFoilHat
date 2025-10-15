@@ -5,7 +5,7 @@ ruby "3.4.4"
 gem "rails", "~> 8.0.1"
 
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
-gem "propshaft", "~> 1.2.1"
+gem "propshaft", "~> 1.3.1"
 
 # Procfile
 gem "passenger", ">= 5.3.2"
@@ -19,7 +19,7 @@ gem "stimulus-rails"
 # gem "redis", "~> 5.3.0"
 # gem 'sidekiq', '~> 7.3.2'
 
-gem "haml-rails", "~> 2.1.0"
+gem "haml-rails", "~> 3.0.0"
 gem "bootsnap", require: false
 
 gem "jsbundling-rails"
