@@ -1,0 +1,2 @@
+#!/usr/bin/env ruby
+exec "ruby -I test -I . test/controllers/welcome_controller_test.rb test/controllers/developers_controller_test.rb"
