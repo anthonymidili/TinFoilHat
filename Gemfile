@@ -10,7 +10,6 @@ gem "propshaft", "~> 1.3.1"
 # Procfile
 gem "passenger", ">= 5.3.2"
 
-gem "pg", "~> 1.6.2"
 gem "jbuilder", "~> 2.14.1"
 gem "turbo-rails" # Using node version
 
