@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby "3.4.4"
+ruby "4.0.0"
 
 gem "rails", "~> 8.1.1"
 
@@ -36,8 +36,8 @@ gem "sitemap_generator"
 gem "aws-sdk-s3", require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem "byebug" if Gem.win_platform?
+  # Call 'debugger' anywhere in the code to stop execution and get a debugger console
+  gem "debug"
   # gem "dotenv-rails"
 end
 
@@ -47,8 +47,8 @@ group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "web-console", ">= 3.3.0"
   gem "listen", "~> 3.3"
-  gem "better_errors"
-  gem "binding_of_caller"
+  # gem "better_errors"
+  # gem "binding_of_caller"
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
