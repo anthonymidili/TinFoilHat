@@ -423,22 +423,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"TinFoilHat@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "TinFoilHat@workspace:."
-  dependencies:
-    "@fortawesome/fontawesome-free": "npm:^7.1.0"
-    "@hotwired/stimulus": "npm:^3.2.2"
-    "@hotwired/turbo-rails": "npm:^8.0.21"
-    "@popperjs/core": "npm:^2.11.8"
-    bootstrap: "npm:^5.3.8"
-    esbuild: "npm:^0.27.2"
-    jquery: "npm:^4.0.0"
-    sass: "npm:^1.97.3"
-    what-input: "npm:^5.2.12"
-  languageName: unknown
-  linkType: soft
-
 "abbrev@npm:^4.0.0":
   version: 4.0.0
   resolution: "abbrev@npm:4.0.0"
@@ -1114,6 +1098,22 @@ __metadata:
   checksum: 10c0/08af3807035957650ad5f2a300c49ca4fe0566ac0ea5a23741a5b5103c6da42891a9eeaed39bc1fbcf21c5cac4dc846828a004727fb08b9d946322d3144d1fd2
   languageName: node
   linkType: hard
+
+"tinfoilhat@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "tinfoilhat@workspace:."
+  dependencies:
+    "@fortawesome/fontawesome-free": "npm:^7.1.0"
+    "@hotwired/stimulus": "npm:^3.2.2"
+    "@hotwired/turbo-rails": "npm:^8.0.21"
+    "@popperjs/core": "npm:^2.11.8"
+    bootstrap: "npm:^5.3.8"
+    esbuild: "npm:^0.27.2"
+    jquery: "npm:^4.0.0"
+    sass: "npm:^1.97.3"
+    what-input: "npm:^5.2.12"
+  languageName: unknown
+  linkType: soft
 
 "tinyglobby@npm:^0.2.12":
   version: 0.2.15
