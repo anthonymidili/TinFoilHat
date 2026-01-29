@@ -1,0 +1,47 @@
+services:
+  web:
+    build: .
+    command: bundle exec passenger start --envvar OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/tmp
+    environment:
+      RAILS_ENV: development
+      RAILS_MASTER_KEY: ${RAILS_MASTER_KEY}
+      OBJC_DISABLE_INITIALIZE_FORK_SAFETY: "YES"
+      LD_PRELOAD: ""
+    stdin_open: true
+    tty: true
+
+  js:
+    build: .
+    command: yarn build:watch
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/tmp
+    environment:
+      RAILS_ENV: development
+      LD_PRELOAD: ""
+    stdin_open: true
+    tty: true
+    depends_on:
+      - web
+
+  css:
+    build: .
+    command: yarn build:css:watch
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/tmp
+    environment:
+      RAILS_ENV: development
+      LD_PRELOAD: ""
+    stdin_open: true
+    tty: true
+    depends_on:
+      - web

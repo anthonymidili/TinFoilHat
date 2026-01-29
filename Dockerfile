@@ -28,19 +28,23 @@ RUN SECRET_KEY_BASE=dummy_for_build bundle exec rake assets:precompile
 # Stage 2: Final Runtime Image
 FROM ruby:4.0.1-slim
 
-ENV RAILS_ENV=production \
-    RAILS_LOG_TO_STDOUT=true \
-    LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu \
-    LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
-
 WORKDIR /app
 
-# Install runtime libraries
+# Install runtime libraries including jemalloc
 RUN apt-get update && apt-get install -y \
     libvips42 libvips-tools libjemalloc2 curl ca-certificates gnupg procps \
     && curl -fsSL https://deb.nodesource.com/setup_24.x | bash - \
     && apt-get install -y nodejs \
+    && corepack enable \
+    && corepack prepare yarn@4.12.0 --activate \
     && rm -rf /var/lib/apt/lists/*
+
+# Set jemalloc library path (find the actual location)
+RUN JEMALLOC_PATH=$(find /usr/lib -name "libjemalloc.so.2" 2>/dev/null | head -n 1) && \
+    echo "export LD_PRELOAD=${JEMALLOC_PATH}" >> /etc/profile.d/jemalloc.sh && \
+    echo "LD_PRELOAD=${JEMALLOC_PATH}" > /etc/environment.d/jemalloc.conf || true
+
+ENV RAILS_LOG_TO_STDOUT=true
 
 # Copy bundler config and gems from builder
 COPY --from=builder /usr/local/bundle /usr/local/bundle
