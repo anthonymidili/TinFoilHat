@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     && npm install -g npm@latest \
     && npm install -g corepack \
     && corepack enable \
-    && corepack prepare yarn@4.12.0 --activate \
+    && corepack prepare yarn@4.13.0 --activate \
     && rm -rf /var/lib/apt/lists/*
 
 # Set WORKDIR
@@ -18,7 +18,7 @@ WORKDIR /app
 
 # Install Bundler and Ruby Gems
 COPY Gemfile Gemfile.lock ./
-RUN gem install bundler:4.0.8 && bundle install --jobs 4 --retry 3
+RUN gem install bundler:4.0.9 && bundle install --jobs 4 --retry 3
 
 # Install JS Dependencies using corepack (built into Node.js)
 COPY package.json yarn.lock .yarnrc.yml ./
@@ -45,7 +45,7 @@ RUN apt-get update && apt-get install -y \
     && npm install -g npm@latest \
     && npm install -g corepack \
     && corepack enable \
-    && corepack prepare yarn@4.12.0 --activate \
+    && corepack prepare yarn@4.13.0 --activate \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy bundler config and gems from builder
