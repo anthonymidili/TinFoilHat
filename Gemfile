@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby "4.0.5"
+ruby "4.0.6"
 
 gem "rails", "~> 8.1.1"
 
@@ -9,6 +9,7 @@ gem "propshaft", "~> 1.3.1"
 
 # Procfile
 gem "passenger", ">= 5.3.2"
+gem "fiddle"
 
 gem "jbuilder", "~> 2.15.1"
 gem "turbo-rails" # Using node version
