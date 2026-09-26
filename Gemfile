@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby "4.0.6"
+ruby "4.0.7"
 
 gem "rails", "~> 8.1.1"
 
